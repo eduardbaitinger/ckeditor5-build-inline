@@ -31,7 +31,8 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
-import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import TextColor from 'ckeditor-text-color-select/src/textcolor';
+import HighlightColor from 'ckeditor5-custom-highlighter/src/highlightcolor';
 import IndentText from 'ckeditor5-indent-text/src/indent-text';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
@@ -65,7 +66,8 @@ InlineEditor.builtinPlugins = [
   PasteFromOffice,
   Table,
   TableToolbar,
-  Highlight,
+  TextColor,
+  HighlightColor,
   IndentText,
   Alignment
 ];
@@ -83,7 +85,8 @@ InlineEditor.defaultConfig = {
       'strikethrough',
       'subscript',
       'superscript',
-      'highlight',
+      'textColor',
+      'highlightColor',
       '|',
       'bulletedList',
       'numberedList',
