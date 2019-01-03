@@ -1040,10 +1040,9 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     "@ckeditor/ckeditor5-engine" "^10.2.0"
     "@ckeditor/ckeditor5-ui" "^11.0.0"
 
-ckeditor5-custom-highlighter@^0.0.3:
+"ckeditor5-custom-highlighter@git+https://github.com/eduardbaitinger/ckeditor5-custom-highlighter#master":
   version "0.0.3"
-  resolved "https://registry.yarnpkg.com/ckeditor5-custom-highlighter/-/ckeditor5-custom-highlighter-0.0.3.tgz#e868ea3524c5c20ffd3376aec2c34b26dd736c2d"
-  integrity sha512-7x4xOVXb0ivKdbV5SQ/UkLzp6zVn1hem8uirta85Bj7q8fNfEudw2aXqWzBvrxLCsVimgil9UfYe8N/+GMXJ/g==
+  resolved "git+https://github.com/eduardbaitinger/ckeditor5-custom-highlighter#5539cc3206fd51bd60e1bd18fa0c37353344b7e4"
   dependencies:
     "@ckeditor/ckeditor5-core" "^11.0.0"
     "@ckeditor/ckeditor5-engine" "^10.2.0"
