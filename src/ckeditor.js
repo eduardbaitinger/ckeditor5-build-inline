@@ -32,45 +32,50 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import IndentText from 'ckeditor5-indent-text/src/indent-text';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
-export default class InlineEditor extends InlineEditorBase {}
+export default class InlineEditor extends InlineEditorBase {
+}
 
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
-	Essentials,
-	UploadAdapter,
-	Autoformat,
+  Essentials,
+  UploadAdapter,
+  Autoformat,
   Font,
-	Bold,
+  Bold,
   Italic,
   Underline,
   Strikethrough,
   Subscript,
   Superscript,
-	BlockQuote,
-	CKFinder,
-	EasyImage,
-	Heading,
-	Image,
-	ImageCaption,
-	ImageStyle,
-	ImageToolbar,
-	ImageUpload,
-	Link,
-	List,
-	Paragraph,
-	PasteFromOffice,
-	Table,
-	TableToolbar,
-	Highlight
+  BlockQuote,
+  CKFinder,
+  EasyImage,
+  Heading,
+  Image,
+  ImageCaption,
+  ImageStyle,
+  ImageToolbar,
+  ImageUpload,
+  Link,
+  List,
+  Paragraph,
+  PasteFromOffice,
+  Table,
+  TableToolbar,
+  Highlight,
+  IndentText,
+  Alignment
 ];
 
 // Editor configuration.
 InlineEditor.defaultConfig = {
-	toolbar: {
-		items: [
-			'heading',
-			'|',
+  toolbar: {
+    items: [
+      'heading',
+      '|',
       'fontSize',
       'bold',
       'italic',
@@ -78,32 +83,54 @@ InlineEditor.defaultConfig = {
       'strikethrough',
       'subscript',
       'superscript',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'highlight',
-			'undo',
-			'redo'
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	},
-	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+      'highlight',
+      '|',
+      'bulletedList',
+      'numberedList',
+      'indentLeft',
+      'indentRight',
+      'alignment',
+      '|',
+      'imageUpload',
+      'insertTable',
+      'link',
+      '|',
+      'undo',
+      'redo',
+    ]
+  },
+  image: {
+    toolbar: [
+      'imageStyle:full',
+      'imageStyle:side',
+      '|',
+      'imageTextAlternative'
+    ]
+  },
+  table: {
+    contentToolbar: [
+      'tableColumn',
+      'tableRow',
+      'mergeTableCells'
+    ]
+  },
+  heading: {
+    options: [
+      {model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph'},
+      {model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1'},
+      {model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2'},
+      {model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3'},
+    ],
+  },
+  fontSize: {
+    options: [8, 9, 10, 11, 12, 13, 'default', 16, 18, 20, 22, 24, 26, 28, 36, 48, 72],
+  },
+  indentText: {
+    options: {
+      indentLength: 40,
+      indentMeasure: 'px',
+    },
+  },
+  // This value must be kept in sync with the language defined in webpack.config.js.
+  language: 'en'
 };
