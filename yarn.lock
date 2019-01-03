@@ -1034,7 +1034,7 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
 
 "ckeditor-text-color-select@git+https://github.com/eduardbaitinger/ckeditor-text-color-select#master":
   version "0.0.2-2"
-  resolved "git+https://github.com/eduardbaitinger/ckeditor-text-color-select#6f16a8404be9b778b8b7943a8bb15b9a11400647"
+  resolved "git+https://github.com/eduardbaitinger/ckeditor-text-color-select#6e3ced95cfa66ff43e50d4a20690653e4f42a4dd"
   dependencies:
     "@ckeditor/ckeditor5-core" "^11.0.0"
     "@ckeditor/ckeditor5-engine" "^10.2.0"
