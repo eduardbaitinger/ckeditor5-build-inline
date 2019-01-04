@@ -33,6 +33,14 @@
     "@ckeditor/ckeditor5-core" "^11.1.0"
     "@ckeditor/ckeditor5-engine" "^12.0.0"
 
+"@ckeditor/ckeditor5-core@^10.0.0":
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-core/-/ckeditor5-core-10.1.0.tgz#e543705382afd6f70ba6628aa5d5a6a29d521a38"
+  integrity sha1-5UNwU4Kv1vcLpmKKpdWmop1SGjg=
+  dependencies:
+    "@ckeditor/ckeditor5-engine" "^10.1.0"
+    "@ckeditor/ckeditor5-utils" "^10.1.0"
+
 "@ckeditor/ckeditor5-core@^11.0.0", "@ckeditor/ckeditor5-core@^11.0.1", "@ckeditor/ckeditor5-core@^11.1.0":
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-core/-/ckeditor5-core-11.1.0.tgz#e2ff1e399a0024a2343c750f2796606196167f1a"
@@ -84,7 +92,7 @@
     "@ckeditor/ckeditor5-utils" "^11.1.0"
     lodash-es "^4.17.10"
 
-"@ckeditor/ckeditor5-engine@^10.2.0":
+"@ckeditor/ckeditor5-engine@^10.0.0", "@ckeditor/ckeditor5-engine@^10.1.0", "@ckeditor/ckeditor5-engine@^10.2.0":
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-engine/-/ckeditor5-engine-10.2.0.tgz#f4cf448c0482233557f48d4b9a97baa571c0e9cc"
   integrity sha512-QHXozzZ3Ppzc/8yuu3/dcdwz65kWK81iCiadCgTTi+y7ts2i7GjmWSG4Xb0jOeXEbKEKnkWJ9UVO+V7efs8c0g==
@@ -244,7 +252,7 @@
     "@ckeditor/ckeditor5-engine" "^12.0.0"
     "@ckeditor/ckeditor5-ui" "^11.2.0"
 
-"@ckeditor/ckeditor5-upload@^10.0.4":
+"@ckeditor/ckeditor5-upload@^10.0.0", "@ckeditor/ckeditor5-upload@^10.0.4":
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-upload/-/ckeditor5-upload-10.0.4.tgz#4c7ad0ad705b434eef7156f80db33f82621e74a6"
   integrity sha512-b6FNp5vKVdDH1TvZLH5ShYLL6cLj5rPsW4FtyYxrDo2DaFriEKSIxgz8T9AICkP9AfM2UoS064zlCWvOWHGYZA==
@@ -254,7 +262,7 @@
     "@ckeditor/ckeditor5-ui" "^11.2.0"
     "@ckeditor/ckeditor5-utils" "^11.1.0"
 
-"@ckeditor/ckeditor5-utils@^10.2.0":
+"@ckeditor/ckeditor5-utils@^10.1.0", "@ckeditor/ckeditor5-utils@^10.2.0":
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-utils/-/ckeditor5-utils-10.2.1.tgz#08268ddb79eddbb2b62acd4d2e04935b2dc75cc6"
   integrity sha512-cnoODoFZXF6iPkuNIz9z8ZAVDzotI+1kivYnrVDN1FkAIh1gXzJk1qqGaX6LuJ+ySbcfwT51L2L/65zaHv92pQ==
@@ -995,6 +1003,15 @@ ckeditor5-indent-text@^1.0.7:
     "@ckeditor/ckeditor5-engine" "^11.0.0"
     "@ckeditor/ckeditor5-ui" "^11.1.0"
     "@ckeditor/ckeditor5-utils" "^11.0.0"
+
+ckeditor5-simple-upload@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/ckeditor5-simple-upload/-/ckeditor5-simple-upload-1.0.4.tgz#e9a4ba4d6d7fb894e68f41ee6e92536c2375ca1b"
+  integrity sha512-NIBX8pMh2hgSeZGv9sXSE6+zQOu4LNaSQh3SAifMoum435z/Hef0X+V5WbB5dtZ0a1c8VZye+LtUbzT5iRWuXw==
+  dependencies:
+    "@ckeditor/ckeditor5-core" "^10.0.0"
+    "@ckeditor/ckeditor5-engine" "^10.0.0"
+    "@ckeditor/ckeditor5-upload" "^10.0.0"
 
 ckeditor5@^11.0.1, ckeditor5@^11.2.0:
   version "11.2.0"
