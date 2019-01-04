@@ -7,7 +7,6 @@
 import InlineEditorBase from '@ckeditor/ckeditor5-editor-inline/src/inlineeditor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
-import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter';
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Font from '@ckeditor/ckeditor5-font/src/font';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
@@ -16,12 +15,8 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
 import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
-import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
-import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
-import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
@@ -42,7 +37,6 @@ export default class InlineEditor extends InlineEditorBase {
 // Plugins to include in the build.
 InlineEditor.builtinPlugins = [
   Essentials,
-  UploadAdapter,
   Autoformat,
   Font,
   Bold,
@@ -51,12 +45,8 @@ InlineEditor.builtinPlugins = [
   Strikethrough,
   Subscript,
   Superscript,
-  BlockQuote,
-  CKFinder,
-  EasyImage,
   Heading,
   Image,
-  ImageCaption,
   ImageStyle,
   ImageToolbar,
   ImageUpload,
@@ -103,12 +93,8 @@ InlineEditor.defaultConfig = {
     ]
   },
   image: {
-    toolbar: [
-      'imageStyle:full',
-      'imageStyle:side',
-      '|',
-      'imageTextAlternative'
-    ]
+    toolbar: ['imageTextAlternative', '|', 'imageStyle:alignLeft', 'imageStyle:full', 'imageStyle:alignRight'],
+    styles: ['full', 'alignLeft', 'alignRight']
   },
   table: {
     contentToolbar: [
